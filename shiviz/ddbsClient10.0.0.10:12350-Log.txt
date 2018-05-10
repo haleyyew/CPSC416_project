@@ -1,0 +1,18 @@
+client10.0.0.10:12350 {"client10.0.0.10:12350":1}
+Initialization Complete
+client10.0.0.10:12350 {"client10.0.0.10:12350":2}
+Send LBS.GetServers
+client10.0.0.10:12350 {"LBS":13, "client10.0.0.10:12350":3, "server10.0.0.5:12345":5, "server10.0.0.6:12346":5, "client10.0.0.8:12348":2}
+Received LBS.GetServers
+client10.0.0.10:12350 {"LBS":13, "client10.0.0.10:12350":4, "server10.0.0.5:12345":5, "server10.0.0.6:12346":5, "client10.0.0.8:12348":2}
+Send ServerConn.ClientConnect10.0.0.6:12346
+client10.0.0.10:12350 {"client10.0.0.10:12350":5, "server10.0.0.5:12345":24, "server10.0.0.6:12346":26, "client10.0.0.8:12348":8, "LBS":13}
+Established connection to server 10.0.0.6:12346
+client10.0.0.10:12350 {"client10.0.0.8:12348":8, "LBS":13, "client10.0.0.10:12350":6, "server10.0.0.5:12345":24, "server10.0.0.6:12346":26}
+Send ServerConn.ClientConnect10.0.0.5:12345
+client10.0.0.10:12350 {"client10.0.0.10:12350":7, "server10.0.0.5:12345":28, "server10.0.0.6:12346":26, "client10.0.0.8:12348":8, "LBS":13}
+Established connection to server 10.0.0.5:12345
+client10.0.0.10:12350 {"client10.0.0.10:12350":8, "server10.0.0.5:12345":28, "server10.0.0.6:12346":26, "client10.0.0.8:12348":8, "LBS":13}
+Send ServerConn.TableLock A
+client10.0.0.10:12350 {"server10.0.0.5:12345":28, "server10.0.0.6:12346":26, "client10.0.0.8:12348":8, "LBS":13, "client10.0.0.10:12350":9}
+Not successful A

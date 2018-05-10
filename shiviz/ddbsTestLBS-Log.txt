@@ -1,0 +1,4 @@
+testLBS {"testLBS":1}
+Initialization Complete
+testLBS {"testLBS":2}
+Sending LBS.AddMappings

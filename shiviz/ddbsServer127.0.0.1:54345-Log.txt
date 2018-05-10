@@ -1,0 +1,26 @@
+server127.0.0.1:54345 {"server127.0.0.1:54345":1}
+Initialization Complete
+server127.0.0.1:54345 {"server127.0.0.1:54345":2, "testLock":2}
+Received TableLock() A
+server127.0.0.1:54345 {"server127.0.0.1:54345":3, "testLock":2}
+Sending TableLock()A
+server127.0.0.1:54345 {"server127.0.0.1:54345":4, "testLock":4}
+Received TableLock() A
+server127.0.0.1:54345 {"server127.0.0.1:54345":5, "testLock":4}
+Error TableLock() table not available A
+server127.0.0.1:54345 {"testLock":6, "server127.0.0.1:54345":6}
+Received TableLock() B
+server127.0.0.1:54345 {"testLock":6, "server127.0.0.1:54345":7}
+Sending TableLock()B
+server127.0.0.1:54345 {"testLock":8, "server127.0.0.1:54345":8}
+Received TableUnlock()
+server127.0.0.1:54345 {"testLock":8, "server127.0.0.1:54345":9}
+Sending TableUnlock()
+server127.0.0.1:54345 {"testLock":10, "server127.0.0.1:54345":10}
+Received TableLock() A
+server127.0.0.1:54345 {"server127.0.0.1:54345":11, "testLock":10}
+Sending TableLock()A
+server127.0.0.1:54345 {"testLock":12, "server127.0.0.1:54345":12}
+Received TableUnlock()
+server127.0.0.1:54345 {"testLock":12, "server127.0.0.1:54345":13}
+Sending TableUnlock()

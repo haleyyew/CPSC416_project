@@ -1,0 +1,44 @@
+server10.0.0.5:12345 {"server10.0.0.5:12345":1}
+Initialization Complete
+server10.0.0.5:12345 {"server10.0.0.5:12345":2}
+Server has tables: A, B, C, A_BACKUP, B_BACKUP, C_BACKUP
+server10.0.0.5:12345 {"server10.0.0.5:12345":3}
+Sending AddMappings to LBS
+server10.0.0.5:12345 {"server10.0.0.5:12345":4, "LBS":3}
+Received AddMappings from LBS
+server10.0.0.5:12345 {"server10.0.0.5:12345":5, "LBS":3}
+Sending GetPeers to LBS
+server10.0.0.5:12345 {"server10.0.0.5:12345":6, "LBS":5}
+Received GetPeers from LBS
+server10.0.0.5:12345 {"server10.0.0.5:12345":7, "LBS":9, "server10.0.0.6:12346":7}
+Received ConnectToPeer from Server
+server10.0.0.5:12345 {"server10.0.0.5:12345":8, "LBS":9, "server10.0.0.6:12346":7}
+Sending ConnectToPeer back
+server10.0.0.5:12345 {"server10.0.0.6:12346":9, "server10.0.0.5:12345":9, "LBS":9}
+Received GetTableContents 
+server10.0.0.5:12345 {"server10.0.0.5:12345":10, "LBS":9, "server10.0.0.6:12346":9}
+Sending GetTableContents reply= Table: C_BACKUP{(  Key:test name:John age:30 gender:M )}
+server10.0.0.5:12345 {"LBS":9, "server10.0.0.6:12346":11, "server10.0.0.5:12345":11}
+Received GetTableContents 
+server10.0.0.5:12345 {"server10.0.0.6:12346":11, "server10.0.0.5:12345":12, "LBS":9}
+Sending GetTableContents reply= Table: A{(  Key:test name:John age:30 gender:M )}
+server10.0.0.5:12345 {"server10.0.0.6:12346":13, "server10.0.0.5:12345":13, "LBS":9}
+Received GetTableContents 
+server10.0.0.5:12345 {"server10.0.0.6:12346":13, "server10.0.0.5:12345":14, "LBS":9}
+Sending GetTableContents reply= Table: B{(  Key:test name:John age:30 gender:M )}
+server10.0.0.5:12345 {"server10.0.0.6:12346":15, "server10.0.0.5:12345":15, "LBS":9}
+Received GetTableContents 
+server10.0.0.5:12345 {"server10.0.0.6:12346":15, "server10.0.0.5:12345":16, "LBS":9}
+Sending GetTableContents reply= Table: C{(  Key:test gender:M name:John age:30 )}
+server10.0.0.5:12345 {"server10.0.0.6:12346":17, "server10.0.0.5:12345":17, "LBS":9}
+Received GetTableContents 
+server10.0.0.5:12345 {"server10.0.0.6:12346":17, "server10.0.0.5:12345":18, "LBS":9}
+Sending GetTableContents reply= Table: A_BACKUP{(  Key:test name:John age:30 gender:M )}
+server10.0.0.5:12345 {"server10.0.0.6:12346":19, "server10.0.0.5:12345":19, "LBS":9}
+Received GetTableContents 
+server10.0.0.5:12345 {"server10.0.0.5:12345":20, "LBS":9, "server10.0.0.6:12346":19}
+Sending GetTableContents reply= Table: B_BACKUP{(  Key:test name:John age:30 gender:M )}
+server10.0.0.5:12345 {"LBS":11, "server10.0.0.6:12346":19, "server10.0.0.5:12345":21}
+Received GetTableNames 
+server10.0.0.5:12345 {"server10.0.0.5:12345":22, "LBS":11, "server10.0.0.6:12346":19}
+Sending GetTableNames reply=A, B, C

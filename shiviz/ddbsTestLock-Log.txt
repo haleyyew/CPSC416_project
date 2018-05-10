@@ -1,0 +1,26 @@
+testLock {"testLock":1}
+Initialization Complete
+testLock {"testLock":2}
+Sending ServerConn.TableLock A
+testLock {"testLock":3, "server127.0.0.1:54345":3}
+Received ServerConn.TableLock A
+testLock {"server127.0.0.1:54345":3, "testLock":4}
+Sending ServerConn.TableLock A
+testLock {"testLock":5, "server127.0.0.1:54345":3}
+Not received ServerConn.TableLock A
+testLock {"testLock":6, "server127.0.0.1:54345":3}
+Sending ServerConn.TableLock B
+testLock {"testLock":7, "server127.0.0.1:54345":7}
+Received ServerConn.TableLock B
+testLock {"server127.0.0.1:54345":7, "testLock":8}
+Sending ServerConn.TableUnlock A
+testLock {"testLock":9, "server127.0.0.1:54345":9}
+Received ServerConn.TableUnlock A
+testLock {"testLock":10, "server127.0.0.1:54345":9}
+Sending ServerConn.TableLock A
+testLock {"testLock":11, "server127.0.0.1:54345":11}
+Received ServerConn.TableLock A
+testLock {"server127.0.0.1:54345":11, "testLock":12}
+Sending ServerConn.TableUnlock B
+testLock {"server127.0.0.1:54345":13, "testLock":13}
+Received ServerConn.TableUnlock B

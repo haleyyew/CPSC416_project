@@ -1,0 +1,164 @@
+server10.0.0.7:12347 {"server10.0.0.7:12347":1}
+Initialization Complete
+server10.0.0.7:12347 {"server10.0.0.7:12347":2}
+Server has tables: A, B, C, A_BACKUP, B_BACKUP, C_BACKUP
+server10.0.0.7:12347 {"server10.0.0.7:12347":3}
+Sending AddMappings to LBS
+server10.0.0.7:12347 {"server10.0.0.7:12347":4, "server10.0.0.5:12345":5, "LBS":11, "server10.0.0.6:12346":5}
+Received AddMappings from LBS
+server10.0.0.7:12347 {"server10.0.0.7:12347":5, "server10.0.0.5:12345":5, "LBS":11, "server10.0.0.6:12346":5}
+Sending GetPeers to LBS
+server10.0.0.7:12347 {"server10.0.0.7:12347":6, "server10.0.0.5:12345":5, "LBS":13, "server10.0.0.6:12346":5}
+Received GetPeers from LBS
+server10.0.0.7:12347 {"server10.0.0.7:12347":7, "server10.0.0.5:12345":5, "LBS":13, "server10.0.0.6:12346":5}
+Sending ConnectToPeer to Server
+server10.0.0.7:12347 {"server10.0.0.6:12346":19, "server10.0.0.7:12347":8, "server10.0.0.5:12345":22, "LBS":13}
+Received ConnectToPeer from Server
+server10.0.0.7:12347 {"server10.0.0.6:12346":19, "server10.0.0.7:12347":9, "server10.0.0.5:12345":22, "LBS":13}
+Send GetTableContents
+server10.0.0.7:12347 {"server10.0.0.6:12346":19, "server10.0.0.7:12347":10, "server10.0.0.5:12345":24, "LBS":13}
+TableCommands.GetTableContents succeeded  Table: B_BACKUP{(  Key:test age:30 gender:M name:John )}
+server10.0.0.7:12347 {"LBS":13, "server10.0.0.6:12346":19, "server10.0.0.7:12347":11, "server10.0.0.5:12345":24}
+Send GetTableContents
+server10.0.0.7:12347 {"LBS":13, "server10.0.0.6:12346":19, "server10.0.0.7:12347":12, "server10.0.0.5:12345":26}
+TableCommands.GetTableContents succeeded  Table: C_BACKUP{(  Key:test name:John age:30 gender:M )}
+server10.0.0.7:12347 {"server10.0.0.5:12345":26, "LBS":13, "server10.0.0.6:12346":19, "server10.0.0.7:12347":13}
+Send GetTableContents
+server10.0.0.7:12347 {"LBS":13, "server10.0.0.6:12346":19, "server10.0.0.7:12347":14, "server10.0.0.5:12345":28}
+TableCommands.GetTableContents succeeded  Table: A{(  Key:test name:John age:30 gender:M )}
+server10.0.0.7:12347 {"LBS":13, "server10.0.0.6:12346":19, "server10.0.0.7:12347":15, "server10.0.0.5:12345":28}
+Send GetTableContents
+server10.0.0.7:12347 {"LBS":13, "server10.0.0.6:12346":19, "server10.0.0.7:12347":16, "server10.0.0.5:12345":30}
+TableCommands.GetTableContents succeeded  Table: B{(  Key:test name:John age:30 gender:M )}
+server10.0.0.7:12347 {"LBS":13, "server10.0.0.6:12346":19, "server10.0.0.7:12347":17, "server10.0.0.5:12345":30}
+Send GetTableContents
+server10.0.0.7:12347 {"LBS":13, "server10.0.0.6:12346":19, "server10.0.0.7:12347":18, "server10.0.0.5:12345":32}
+TableCommands.GetTableContents succeeded  Table: C{(  Key:test name:John age:30 gender:M )}
+server10.0.0.7:12347 {"server10.0.0.7:12347":19, "server10.0.0.5:12345":32, "LBS":13, "server10.0.0.6:12346":19}
+Send GetTableContents
+server10.0.0.7:12347 {"server10.0.0.7:12347":20, "server10.0.0.5:12345":34, "LBS":13, "server10.0.0.6:12346":19}
+TableCommands.GetTableContents succeeded  Table: A_BACKUP{(  Key:test age:30 gender:M name:John )}
+server10.0.0.7:12347 {"server10.0.0.7:12347":21, "server10.0.0.5:12345":34, "LBS":13, "server10.0.0.6:12346":19}
+Sending ConnectToPeer to Server
+server10.0.0.7:12347 {"server10.0.0.7:12347":22, "server10.0.0.5:12345":34, "LBS":13, "server10.0.0.6:12346":22}
+Received ConnectToPeer from Server
+server10.0.0.7:12347 {"server10.0.0.5:12345":34, "LBS":13, "server10.0.0.6:12346":22, "server10.0.0.7:12347":23}
+Send GetTableContents
+server10.0.0.7:12347 {"server10.0.0.5:12345":34, "LBS":13, "server10.0.0.6:12346":24, "server10.0.0.7:12347":24}
+TableCommands.GetTableContents succeeded  Table: A_BACKUP{(  Key:test gender:M name:John age:30 )}
+server10.0.0.7:12347 {"server10.0.0.7:12347":25, "server10.0.0.5:12345":34, "LBS":13, "server10.0.0.6:12346":24}
+Send GetTableContents
+server10.0.0.7:12347 {"server10.0.0.6:12346":26, "server10.0.0.7:12347":26, "server10.0.0.5:12345":34, "LBS":13}
+TableCommands.GetTableContents succeeded  Table: B_BACKUP{(  Key:test gender:M name:John age:30 )}
+server10.0.0.7:12347 {"server10.0.0.6:12346":26, "server10.0.0.7:12347":27, "server10.0.0.5:12345":34, "LBS":13}
+Send GetTableContents
+server10.0.0.7:12347 {"server10.0.0.6:12346":28, "server10.0.0.7:12347":28, "server10.0.0.5:12345":34, "LBS":13}
+TableCommands.GetTableContents succeeded  Table: C_BACKUP{(  Key:test gender:M name:John age:30 )}
+server10.0.0.7:12347 {"server10.0.0.6:12346":28, "server10.0.0.7:12347":29, "server10.0.0.5:12345":34, "LBS":13}
+Send GetTableContents
+server10.0.0.7:12347 {"LBS":13, "server10.0.0.6:12346":30, "server10.0.0.7:12347":30, "server10.0.0.5:12345":34}
+TableCommands.GetTableContents succeeded  Table: A{(  Key:test name:John age:30 gender:M )}
+server10.0.0.7:12347 {"server10.0.0.5:12345":34, "LBS":13, "server10.0.0.6:12346":30, "server10.0.0.7:12347":31}
+Send GetTableContents
+server10.0.0.7:12347 {"LBS":13, "server10.0.0.6:12346":32, "server10.0.0.7:12347":32, "server10.0.0.5:12345":34}
+TableCommands.GetTableContents succeeded  Table: B{(  Key:test name:John age:30 gender:M )}
+server10.0.0.7:12347 {"LBS":13, "server10.0.0.6:12346":32, "server10.0.0.7:12347":33, "server10.0.0.5:12345":34}
+Send GetTableContents
+server10.0.0.7:12347 {"server10.0.0.7:12347":34, "server10.0.0.5:12345":34, "LBS":13, "server10.0.0.6:12346":34}
+TableCommands.GetTableContents succeeded  Table: C{(  Key:test gender:M name:John age:30 )}
+server10.0.0.7:12347 {"server10.0.0.5:12345":38, "LBS":15, "server10.0.0.6:12346":40, "server10.0.0.7:12347":35, "client10.0.0.8:12348":8}
+Received TableUnavailable()
+server10.0.0.7:12347 {"LBS":15, "server10.0.0.6:12346":40, "server10.0.0.7:12347":36, "client10.0.0.8:12348":8, "server10.0.0.5:12345":38}
+Sending TableUnavailable()
+server10.0.0.7:12347 {"server10.0.0.5:12345":42, "LBS":15, "server10.0.0.6:12346":44, "server10.0.0.7:12347":37, "client10.0.0.8:12348":10}
+Received TableUnavailable()
+server10.0.0.7:12347 {"LBS":15, "server10.0.0.6:12346":44, "server10.0.0.7:12347":38, "client10.0.0.8:12348":10, "server10.0.0.5:12345":42}
+Sending TableUnavailable()
+server10.0.0.7:12347 {"server10.0.0.6:12346":50, "server10.0.0.7:12347":39, "client10.0.0.8:12348":16, "server10.0.0.5:12345":48, "LBS":15}
+Received PrepareTableForCommit for table A
+server10.0.0.7:12347 {"LBS":15, "server10.0.0.6:12346":50, "server10.0.0.7:12347":40, "client10.0.0.8:12348":16, "server10.0.0.5:12345":48}
+Sending PrepareTableForCommit result table =  Table: A{(  Key:test gender:M name:John age:30 )}
+server10.0.0.7:12347 {"server10.0.0.5:12345":52, "LBS":15, "server10.0.0.6:12346":54, "server10.0.0.7:12347":41, "client10.0.0.8:12348":18}
+Received PrepareTableForCommit for table B
+server10.0.0.7:12347 {"server10.0.0.5:12345":52, "LBS":15, "server10.0.0.6:12346":54, "server10.0.0.7:12347":42, "client10.0.0.8:12348":18}
+Sending PrepareTableForCommit result table =  Table: B{(  Key:test name:John age:30 gender:M )(  Key:test2 gender:F name:Alice age:30 )}
+server10.0.0.7:12347 {"server10.0.0.6:12346":58, "server10.0.0.7:12347":43, "client10.0.0.8:12348":20, "server10.0.0.5:12345":56, "LBS":15}
+Received CommitTable for table A
+server10.0.0.7:12347 {"server10.0.0.5:12345":56, "LBS":15, "server10.0.0.6:12346":58, "server10.0.0.7:12347":44, "client10.0.0.8:12348":20}
+Sending CommitTable result table =  Table: A{(  Key:test gender:M name:John age:30 )}
+server10.0.0.7:12347 {"LBS":15, "server10.0.0.6:12346":62, "server10.0.0.7:12347":45, "client10.0.0.8:12348":22, "server10.0.0.5:12345":60}
+Received CommitTable for table B
+server10.0.0.7:12347 {"server10.0.0.7:12347":46, "client10.0.0.8:12348":22, "server10.0.0.5:12345":60, "LBS":15, "server10.0.0.6:12346":62}
+Sending CommitTable result table =  Table: B{(  Key:test name:John age:30 gender:M )(  Key:test2 gender:F name:Alice age:30 )}
+server10.0.0.7:12347 {"server10.0.0.7:12347":47, "client10.0.0.8:12348":24, "server10.0.0.5:12345":64, "LBS":15, "server10.0.0.6:12346":66}
+Received TableAvailable()
+server10.0.0.7:12347 {"server10.0.0.5:12345":64, "LBS":15, "server10.0.0.6:12346":66, "server10.0.0.7:12347":48, "client10.0.0.8:12348":24}
+Sending TableAvailable()
+server10.0.0.7:12347 {"server10.0.0.7:12347":49, "client10.0.0.8:12348":26, "server10.0.0.5:12345":68, "LBS":15, "server10.0.0.6:12346":70}
+Received TableAvailable()
+server10.0.0.7:12347 {"LBS":15, "server10.0.0.6:12346":70, "server10.0.0.7:12347":50, "client10.0.0.8:12348":26, "server10.0.0.5:12345":68}
+Sending TableAvailable()
+server10.0.0.7:12347 {"client10.0.0.8:12348":38, "server10.0.0.5:12345":76, "LBS":17, "server10.0.0.6:12346":74, "server10.0.0.7:12347":51}
+Received TableUnavailable()
+server10.0.0.7:12347 {"server10.0.0.5:12345":76, "LBS":17, "server10.0.0.6:12346":74, "server10.0.0.7:12347":52, "client10.0.0.8:12348":38}
+Sending TableUnavailable()
+server10.0.0.7:12347 {"server10.0.0.5:12345":78, "LBS":17, "server10.0.0.6:12346":76, "server10.0.0.7:12347":53, "client10.0.0.8:12348":40}
+Received TableUnavailable()
+server10.0.0.7:12347 {"server10.0.0.5:12345":78, "LBS":17, "server10.0.0.6:12346":76, "server10.0.0.7:12347":54, "client10.0.0.8:12348":40}
+Sending TableUnavailable()
+server10.0.0.7:12347 {"client10.0.0.8:12348":46, "server10.0.0.5:12345":86, "LBS":17, "server10.0.0.6:12346":84, "server10.0.0.7:12347":55}
+Received PrepareTableForCommit for table B
+server10.0.0.7:12347 {"server10.0.0.7:12347":56, "client10.0.0.8:12348":46, "server10.0.0.5:12345":86, "LBS":17, "server10.0.0.6:12346":84}
+Sending PrepareTableForCommit result table =  Table: B{(  Key:test gender:M name:John age:30 )(  Key:test2 name:Sam age:60 gender:M )}
+server10.0.0.7:12347 {"server10.0.0.6:12346":88, "server10.0.0.7:12347":57, "client10.0.0.8:12348":48, "server10.0.0.5:12345":90, "LBS":17}
+Received PrepareTableForCommit for table C
+server10.0.0.7:12347 {"server10.0.0.6:12346":88, "server10.0.0.7:12347":58, "client10.0.0.8:12348":48, "server10.0.0.5:12345":90, "LBS":17}
+Sending PrepareTableForCommit result table =  Table: C{(  Key:test3 name:Sam age:60 gender:M )(  Key:test name:John age:30 gender:M )}
+server10.0.0.7:12347 {"LBS":17, "server10.0.0.6:12346":92, "server10.0.0.7:12347":59, "client10.0.0.8:12348":50, "server10.0.0.5:12345":94}
+Received CommitTable for table B
+server10.0.0.7:12347 {"server10.0.0.7:12347":60, "client10.0.0.8:12348":50, "server10.0.0.5:12345":94, "LBS":17, "server10.0.0.6:12346":92}
+Sending CommitTable result table =  Table: B{(  Key:test2 gender:M name:Sam age:60 )(  Key:test gender:M name:John age:30 )}
+server10.0.0.7:12347 {"server10.0.0.7:12347":61, "client10.0.0.8:12348":52, "server10.0.0.5:12345":98, "LBS":17, "server10.0.0.6:12346":96}
+Received CommitTable for table C
+server10.0.0.7:12347 {"LBS":17, "server10.0.0.6:12346":96, "server10.0.0.7:12347":62, "client10.0.0.8:12348":52, "server10.0.0.5:12345":98}
+Sending CommitTable result table =  Table: C{(  Key:test3 name:Sam age:60 gender:M )(  Key:test name:John age:30 gender:M )}
+server10.0.0.7:12347 {"LBS":17, "server10.0.0.6:12346":102, "server10.0.0.7:12347":63, "client10.0.0.8:12348":54, "server10.0.0.5:12345":100}
+Received TableAvailable()
+server10.0.0.7:12347 {"server10.0.0.7:12347":64, "client10.0.0.8:12348":54, "server10.0.0.5:12345":100, "LBS":17, "server10.0.0.6:12346":102}
+Sending TableAvailable()
+server10.0.0.7:12347 {"server10.0.0.6:12346":106, "server10.0.0.7:12347":65, "client10.0.0.8:12348":56, "server10.0.0.5:12345":104, "LBS":17}
+Received TableAvailable()
+server10.0.0.7:12347 {"LBS":17, "server10.0.0.6:12346":106, "server10.0.0.7:12347":66, "client10.0.0.8:12348":56, "server10.0.0.5:12345":104}
+Sending TableAvailable()
+server10.0.0.7:12347 {"server10.0.0.6:12346":110, "server10.0.0.7:12347":67, "client10.0.0.8:12348":68, "server10.0.0.5:12345":112, "LBS":19}
+Received TableUnavailable()
+server10.0.0.7:12347 {"server10.0.0.6:12346":110, "server10.0.0.7:12347":68, "client10.0.0.8:12348":68, "server10.0.0.5:12345":112, "LBS":19}
+Sending TableUnavailable()
+server10.0.0.7:12347 {"LBS":19, "server10.0.0.6:12346":114, "server10.0.0.7:12347":69, "client10.0.0.8:12348":70, "server10.0.0.5:12345":116}
+Received TableUnavailable()
+server10.0.0.7:12347 {"client10.0.0.8:12348":70, "server10.0.0.5:12345":116, "LBS":19, "server10.0.0.6:12346":114, "server10.0.0.7:12347":70}
+Sending TableUnavailable()
+server10.0.0.7:12347 {"LBS":19, "server10.0.0.6:12346":122, "server10.0.0.7:12347":71, "client10.0.0.8:12348":78, "server10.0.0.5:12345":120}
+Received PrepareTableForCommit for table C
+server10.0.0.7:12347 {"server10.0.0.5:12345":120, "LBS":19, "server10.0.0.6:12346":122, "server10.0.0.7:12347":72, "client10.0.0.8:12348":78}
+Sending PrepareTableForCommit result table =  Table: C{(  Key:test age:30 gender:M name:John )(  Key:test3 gender:M name:Sam age:60 )}
+server10.0.0.7:12347 {"server10.0.0.7:12347":73, "client10.0.0.8:12348":80, "server10.0.0.5:12345":124, "LBS":19, "server10.0.0.6:12346":126}
+Received PrepareTableForCommit for table B
+server10.0.0.7:12347 {"client10.0.0.8:12348":80, "server10.0.0.5:12345":124, "LBS":19, "server10.0.0.6:12346":126, "server10.0.0.7:12347":74}
+Sending PrepareTableForCommit result table =  Table: B{(  Key:test2 gender:M name:Sam age:60 )(  Key:test name:John age:30 gender:M )}
+server10.0.0.7:12347 {"server10.0.0.6:12346":126, "server10.0.0.7:12347":75, "client10.0.0.8:12348":82, "server10.0.0.5:12345":128, "LBS":19}
+Received CommitTable for table B
+server10.0.0.7:12347 {"server10.0.0.6:12346":126, "server10.0.0.7:12347":76, "client10.0.0.8:12348":82, "server10.0.0.5:12345":128, "LBS":19}
+Sending CommitTable result table =  Table: B{(  Key:test age:30 gender:M name:John )(  Key:test2 gender:M name:Sam age:60 )}
+server10.0.0.7:12347 {"client10.0.0.8:12348":84, "server10.0.0.5:12345":134, "LBS":19, "server10.0.0.6:12346":132, "server10.0.0.7:12347":77}
+Received CommitTable for table C
+server10.0.0.7:12347 {"client10.0.0.8:12348":84, "server10.0.0.5:12345":134, "LBS":19, "server10.0.0.6:12346":132, "server10.0.0.7:12347":78}
+Sending CommitTable result table =  Table: C{(  Key:test gender:M name:John age:30 )(  Key:test3 age:60 gender:M name:Sam )}
+server10.0.0.7:12347 {"client10.0.0.8:12348":86, "server10.0.0.5:12345":138, "LBS":19, "server10.0.0.6:12346":136, "server10.0.0.7:12347":79}
+Received TableAvailable()
+server10.0.0.7:12347 {"client10.0.0.8:12348":86, "server10.0.0.5:12345":138, "LBS":19, "server10.0.0.6:12346":136, "server10.0.0.7:12347":80}
+Sending TableAvailable()
+server10.0.0.7:12347 {"server10.0.0.5:12345":142, "LBS":19, "server10.0.0.6:12346":140, "server10.0.0.7:12347":81, "client10.0.0.8:12348":88}
+Received TableAvailable()
+server10.0.0.7:12347 {"client10.0.0.8:12348":88, "server10.0.0.5:12345":142, "LBS":19, "server10.0.0.6:12346":140, "server10.0.0.7:12347":82}
+Sending TableAvailable()

@@ -1,0 +1,34 @@
+client127.0.0.1:9998 {"client127.0.0.1:9998":1}
+Initialization Complete
+client127.0.0.1:9998 {"client127.0.0.1:9998":2}
+Send LBS.GetServers
+client127.0.0.1:9998 {"client127.0.0.1:9998":3, "server127.0.0.1:12346":4, "client127.0.0.1:9999":2, "LBS":13, "server127.0.0.1:12345":4}
+Received LBS.GetServers
+client127.0.0.1:9998 {"client127.0.0.1:9998":4, "server127.0.0.1:12346":4, "client127.0.0.1:9999":2, "LBS":13, "server127.0.0.1:12345":4}
+Send ServerConn.ClientConnect127.0.0.1:12345
+client127.0.0.1:9998 {"LBS":13, "server127.0.0.1:12345":11, "client127.0.0.1:9998":5, "server127.0.0.1:12346":6, "client127.0.0.1:9999":4}
+Established connection to server 127.0.0.1:12345
+client127.0.0.1:9998 {"LBS":13, "server127.0.0.1:12345":11, "client127.0.0.1:9998":6, "server127.0.0.1:12346":6, "client127.0.0.1:9999":4}
+Send ServerConn.ClientConnect127.0.0.1:12345
+client127.0.0.1:9998 {"server127.0.0.1:12345":11, "client127.0.0.1:9998":7, "server127.0.0.1:12346":6, "client127.0.0.1:9999":4, "LBS":13}
+Cannot establish connection to server 127.0.0.1:12345
+client127.0.0.1:9998 {"server127.0.0.1:12345":11, "client127.0.0.1:9998":8, "server127.0.0.1:12346":6, "client127.0.0.1:9999":4, "LBS":13}
+Send ServerConn.TableLock A
+client127.0.0.1:9998 {"LBS":13, "server127.0.0.1:12345":15, "client127.0.0.1:9998":9, "server127.0.0.1:12346":13, "client127.0.0.1:9999":8}
+Received result A
+client127.0.0.1:9998 {"LBS":13, "server127.0.0.1:12345":15, "client127.0.0.1:9998":10, "server127.0.0.1:12346":13, "client127.0.0.1:9999":8}
+Send ServerConn.TableLock B
+client127.0.0.1:9998 {"client127.0.0.1:9998":11, "server127.0.0.1:12346":13, "client127.0.0.1:9999":8, "LBS":13, "server127.0.0.1:12345":15}
+Not successful B
+client127.0.0.1:9998 {"server127.0.0.1:12345":15, "client127.0.0.1:9998":12, "server127.0.0.1:12346":13, "client127.0.0.1:9999":8, "LBS":13}
+Send ServerConn.TableLock B
+client127.0.0.1:9998 {"client127.0.0.1:9998":13, "server127.0.0.1:12346":13, "client127.0.0.1:9999":8, "LBS":13, "server127.0.0.1:12345":15}
+Not successful B
+client127.0.0.1:9998 {"server127.0.0.1:12346":13, "client127.0.0.1:9999":8, "LBS":13, "server127.0.0.1:12345":15, "client127.0.0.1:9998":14}
+Send ServerConn.TableLock B
+client127.0.0.1:9998 {"server127.0.0.1:12346":13, "client127.0.0.1:9999":8, "LBS":13, "server127.0.0.1:12345":15, "client127.0.0.1:9998":15}
+Not successful B
+client127.0.0.1:9998 {"LBS":13, "server127.0.0.1:12345":15, "client127.0.0.1:9998":16, "server127.0.0.1:12346":13, "client127.0.0.1:9999":8}
+Send ServerConn.TableUnlock A
+client127.0.0.1:9998 {"LBS":13, "server127.0.0.1:12345":25, "client127.0.0.1:9998":17, "server127.0.0.1:12346":21, "client127.0.0.1:9999":8}
+Received result A

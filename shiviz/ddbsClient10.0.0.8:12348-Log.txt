@@ -1,0 +1,62 @@
+client10.0.0.8:12348 {"client10.0.0.8:12348":1}
+Initialization Complete
+client10.0.0.8:12348 {"client10.0.0.8:12348":2}
+Send LBS.GetServers
+client10.0.0.8:12348 {"client10.0.0.8:12348":3, "server10.0.0.6:12346":5, "LBS":11, "server10.0.0.5:12345":5}
+Received LBS.GetServers
+client10.0.0.8:12348 {"LBS":11, "server10.0.0.5:12345":5, "client10.0.0.8:12348":4, "server10.0.0.6:12346":5}
+Send ServerConn.ClientConnect10.0.0.5:12345
+client10.0.0.8:12348 {"client10.0.0.8:12348":5, "server10.0.0.6:12346":19, "LBS":11, "server10.0.0.5:12345":22}
+Established connection to server 10.0.0.5:12345
+client10.0.0.8:12348 {"server10.0.0.5:12345":22, "client10.0.0.8:12348":6, "server10.0.0.6:12346":19, "LBS":11}
+Send ServerConn.ClientConnect10.0.0.6:12346
+client10.0.0.8:12348 {"server10.0.0.6:12346":22, "LBS":11, "server10.0.0.5:12345":22, "client10.0.0.8:12348":7}
+Established connection to server 10.0.0.6:12346
+client10.0.0.8:12348 {"client10.0.0.8:12348":8, "server10.0.0.6:12346":22, "LBS":11, "server10.0.0.5:12345":22}
+Send ServerConn.TableLock A
+client10.0.0.8:12348 {"server10.0.0.6:12346":24, "LBS":11, "server10.0.0.5:12345":26, "client10.0.0.8:12348":9}
+Received result A
+client10.0.0.8:12348 {"server10.0.0.5:12345":26, "client10.0.0.8:12348":10, "server10.0.0.6:12346":24, "LBS":11}
+Send ServerConn.TableLock B
+client10.0.0.8:12348 {"client10.0.0.8:12348":11, "server10.0.0.6:12346":30, "LBS":13, "server10.0.0.5:12345":32, "client10.0.0.10:12350":8}
+Received result B
+client10.0.0.8:12348 {"client10.0.0.8:12348":12, "server10.0.0.6:12346":30, "LBS":13, "server10.0.0.5:12345":32, "client10.0.0.10:12350":8}
+Send ExecuteOperation
+client10.0.0.8:12348 {"server10.0.0.5:12345":35, "client10.0.0.10:12350":8, "client10.0.0.8:12348":13, "server10.0.0.6:12346":30, "LBS":13}
+TableCommands.GetRow succeeded Table: A{(  Key:test gender:M name:John age:30 )}
+client10.0.0.8:12348 {"client10.0.0.8:12348":14, "server10.0.0.6:12346":30, "LBS":13, "server10.0.0.5:12345":35, "client10.0.0.10:12350":8}
+Send ExecuteOperation
+client10.0.0.8:12348 {"server10.0.0.6:12346":33, "LBS":13, "server10.0.0.5:12345":35, "client10.0.0.10:12350":8, "client10.0.0.8:12348":15}
+TableCommands.GetRow succeeded Table: B{(  Key:test name:John age:30 gender:M )}
+client10.0.0.8:12348 {"server10.0.0.5:12345":35, "client10.0.0.10:12350":8, "client10.0.0.8:12348":16, "server10.0.0.6:12346":33, "LBS":13}
+Send TransactionManager.prepareCommit
+client10.0.0.8:12348 {"server10.0.0.6:12346":35, "LBS":13, "server10.0.0.5:12345":39, "client10.0.0.10:12350":8, "client10.0.0.8:12348":17}
+TransactionManager.PrepareCommit succeeded
+client10.0.0.8:12348 {"server10.0.0.5:12345":39, "client10.0.0.10:12350":8, "client10.0.0.8:12348":18, "server10.0.0.6:12346":35, "LBS":13}
+Send TransactionManager.prepareCommit
+client10.0.0.8:12348 {"client10.0.0.8:12348":19, "server10.0.0.6:12346":39, "LBS":13, "server10.0.0.5:12345":41, "client10.0.0.10:12350":8}
+TransactionManager.PrepareCommit succeeded
+client10.0.0.8:12348 {"server10.0.0.6:12346":39, "LBS":13, "server10.0.0.5:12345":41, "client10.0.0.10:12350":8, "client10.0.0.8:12348":20}
+Send TransactionManager.CommitTransaction
+client10.0.0.8:12348 {"server10.0.0.6:12346":41, "LBS":13, "server10.0.0.5:12345":45, "client10.0.0.10:12350":8, "client10.0.0.8:12348":21}
+TransactionManager.CommitTransaction succeeded
+client10.0.0.8:12348 {"client10.0.0.10:12350":8, "client10.0.0.8:12348":22, "server10.0.0.6:12346":41, "LBS":13, "server10.0.0.5:12345":45}
+Send TransactionManager.CommitTransaction
+client10.0.0.8:12348 {"server10.0.0.5:12345":47, "client10.0.0.10:12350":8, "client10.0.0.8:12348":23, "server10.0.0.6:12346":45, "LBS":13}
+TransactionManager.CommitTransaction succeeded
+client10.0.0.8:12348 {"server10.0.0.5:12345":47, "client10.0.0.10:12350":8, "client10.0.0.8:12348":24, "server10.0.0.6:12346":45, "LBS":13}
+Send ServerConn.TableUnlock A
+client10.0.0.8:12348 {"client10.0.0.10:12350":8, "client10.0.0.8:12348":25, "server10.0.0.6:12346":47, "LBS":13, "server10.0.0.5:12345":51}
+Received result A
+client10.0.0.8:12348 {"client10.0.0.10:12350":8, "client10.0.0.8:12348":26, "server10.0.0.6:12346":47, "LBS":13, "server10.0.0.5:12345":51}
+Send ServerConn.TableUnlock B
+client10.0.0.8:12348 {"server10.0.0.5:12345":53, "client10.0.0.10:12350":8, "client10.0.0.8:12348":27, "server10.0.0.6:12346":51, "LBS":13}
+Received result B
+client10.0.0.8:12348 {"server10.0.0.6:12346":51, "LBS":13, "server10.0.0.5:12345":53, "client10.0.0.10:12350":8, "client10.0.0.8:12348":28}
+Transaction finished, result : Table: A{(  Key:test gender:M name:John age:30 )}, Table: B{(  Key:test name:John age:30 gender:M )}
+client10.0.0.8:12348 {"client10.0.0.10:12350":8, "client10.0.0.8:12348":29, "server10.0.0.6:12346":51, "LBS":13, "server10.0.0.5:12345":53}
+Close connection to 10.0.0.5:12345
+client10.0.0.8:12348 {"LBS":13, "server10.0.0.5:12345":53, "client10.0.0.10:12350":8, "client10.0.0.8:12348":30, "server10.0.0.6:12346":51}
+Close connection to 10.0.0.6:12346
+client10.0.0.8:12348 {"client10.0.0.8:12348":31, "server10.0.0.6:12346":51, "LBS":13, "server10.0.0.5:12345":53, "client10.0.0.10:12350":8}
+Transaction succeeded

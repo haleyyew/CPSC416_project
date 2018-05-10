@@ -1,0 +1,4 @@
+client0.0.0.0:9999 {"client0.0.0.0:9999":1}
+Initialization Complete
+client0.0.0.0:9999 {"client0.0.0.0:9999":2}
+Send LBS.GetServers
